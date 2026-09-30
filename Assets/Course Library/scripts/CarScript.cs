@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CarScript : MonoBehaviour
-{
+{   
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,8 @@ public class CarScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //move the veicle foward
+
+      transform.Translate(Vector3.forward * Time.deltaTime *20);
     }
 }
