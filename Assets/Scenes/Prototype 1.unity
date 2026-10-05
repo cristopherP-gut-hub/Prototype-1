@@ -728,6 +728,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb783ee4de2a04a58b5ffd787ae0757a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 20
+--- !u!4 &858745744 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
+  m_PrefabInstance: {fileID: 392330570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915093342
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +838,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -902,8 +909,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 17.69, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04159e013b8407cb79d1e3a9deb1be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 756268141}
+  offset: {x: 0, y: 5, z: -10}
+  followDelay: 0.25
 --- !u!1001 &974359749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -994,7 +1016,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014164779}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.958346, y: -312.84015, z: 303.33224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1002,8 +1024,8 @@ Transform:
   - {fileID: 407831693}
   - {fileID: 446592702}
   - {fileID: 915093343}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 858745744}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1038921805
 GameObject:
@@ -1160,6 +1182,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8780424320546655305, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
   m_PrefabInstance: {fileID: 2004443867}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1156384448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156384449}
+  m_Layer: 0
+  m_Name: frontWheels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1156384449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156384448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -232.08102, y: -250.51129, z: -326.57602}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1230979608
 GameObject:
   m_ObjectHideFlags: 0

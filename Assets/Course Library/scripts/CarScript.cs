@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CarScript : MonoBehaviour
 {   
-
+ public float speed = 20f;
     
     // Start is called before the first frame update
     void Start()
     {
-        public float speed = 20f;
+       
     }
 
     // Update is called once per frame
