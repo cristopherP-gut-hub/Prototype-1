@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CarScript : MonoBehaviour
 {   
- public float speed = 20f;
+ public float speed = 20;
+ public float turnspeed = 45;
+ public float horizontalInput;
+ public float fowardInput;
     
     // Start is called before the first frame update
     void Start()
@@ -16,7 +19,12 @@ public class CarScript : MonoBehaviour
      void Update()
     {
         //move the veicle foward
-      
-      transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        fowardInput = Input.GetAxis("Vertical"); 
+
+        horizontalInput = Input.GetAxis("Horizontal");
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * fowardInput);
+
+        transform.Rotate(Vector3.up * turnspeed * horizontalInput * Time.deltaTime);
     }
 }
